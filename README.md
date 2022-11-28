@@ -1,2 +1,2 @@
-# forif
-Assignments for 02_for_if
+# JAVA assignments
+All assignments can be found in this repo
