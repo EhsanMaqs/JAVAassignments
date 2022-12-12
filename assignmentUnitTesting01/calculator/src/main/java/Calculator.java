@@ -1,26 +1,22 @@
 public class Calculator {
 
-    public static String sum(double i, double j) {
-        double sum = i + j;
-        String result = String.valueOf(sum);
-        return result;
+
+    public static double sum(double i, double j) {
+        return i + j;
     }
 
-    public static String multiply(double i, double j) {
-        double sum = i * j;
-        String result = String.valueOf(sum);
-        return result;
+    public static double multiply(double i, double j) {
+        return i * j;
     }
 
-    public static String divide(double i, double j) {
-        double sum = i / j;
-        String result = String.valueOf(sum);
-        return result;
+    public static double divide(double i, double j) {
+        if(j == 0) {
+            throw new ArithmeticException("Division by zero");
+        }
+        return i / j;
     }
 
-    public static String subtract(double i, double j) {
-        double sum = i - j;
-        String result = String.valueOf(sum);
-        return result;
+    public static double subtract(double i, double j) {
+        return i - j;
     }
 }
