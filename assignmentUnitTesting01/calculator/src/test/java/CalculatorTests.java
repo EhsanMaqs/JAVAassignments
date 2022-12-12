@@ -43,6 +43,7 @@ public class CalculatorTests {
     }
 
     @Test
+    @DisplayName("Testing if subtraction works with 3 and 5")
     public void CalculatorSubtract35() {
         double result = Calculator.subtract(3, 5);
         assertEquals(-2.0, result, 0.0);
